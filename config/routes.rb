@@ -2,7 +2,7 @@ WellspringMockup::Application.routes.draw do
   resources :messages
 
 
-  root :to => 'messages#new'
+  root :to => 'pages/home'
 
   match '/home',    to: 'pages#home'
   match '/about',   to: 'pages#about'
