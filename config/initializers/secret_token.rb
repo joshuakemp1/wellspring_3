@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Wellspring3::Application.config.secret_token = '6571b3a1b21b4e8cf4315ad654d1b671630783409bb6b42083ec10d7258caf3745a9e970d4e59c8e65ee2e0dee88ef8b0aa316ee4b8a6d85ac1f21cd77d60a59'
+WellspringMockup::Application.config.secret_token = '731793a3b26fba0872c1e1575af0efb447b1920246819fd2b280b3bf25e08c071ee227546041d75c2641d2929d501c56f5e3b7bc9bb3b54e1be16668121e6d2d'

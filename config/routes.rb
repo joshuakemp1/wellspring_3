@@ -1,4 +1,30 @@
-Wellspring3::Application.routes.draw do
+WellspringMockup::Application.routes.draw do  
+  resources :messages
+
+
+  root :to => 'messages#new'
+
+  match '/home',    to: 'pages#home'
+  match '/about',   to: 'pages#about'
+  match '/services', to: 'pages#services'
+  match '/portfolio',    to: 'pages#portfolio'
+  match '/fees',   to: 'pages#fees'
+  match '/contact', to: 'pages#contact'
+
+
+
+  # get "pages/home"
+
+  # get "pages/about"
+
+  # get "pages/services"
+
+  # get "pages/portfolio"
+
+  # get "pages/fees"
+
+  # get "pages/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

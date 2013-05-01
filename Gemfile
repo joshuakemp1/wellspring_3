@@ -4,23 +4,40 @@ gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
+gem 'active_attr'
+gem 'jquery-rails'
+gem 'bootstrap'
+gem 'simple-navigation'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'susy'
+  gem 'compass', '>= 0.12.2'
+  gem 'compass-rails', '>= 1.0.3'
+  gem 'fancy-buttons'
+  gem 'uglifier', '>= 1.0.3'
+  gem "better_errors", "~> 0.8.0"
+  gem "binding_of_caller", "~> 0.7.1"
 
+end
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+
+
+
+
+group :production do
+  gem 'pg', '0.12.2'
 end
 
-gem 'jquery-rails'
+group :test do
+  gem 'sqlite3'
+end
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
