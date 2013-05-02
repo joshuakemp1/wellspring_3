@@ -1,15 +1,15 @@
 WellspringMockup::Application.routes.draw do  
   resources :messages
 
+  root :to => 'pages#home'
 
-  root :to => 'pages/home'
 
-  match '/home',    to: 'pages#home'
-  match '/about',   to: 'pages#about'
-  match '/services', to: 'pages#services'
-  match '/portfolio',    to: 'pages#portfolio'
-  match '/fees',   to: 'pages#fees'
-  match '/contact', to: 'pages#contact'
+  match '/home',    :to => 'pages#home'
+  match '/about',   :to => 'pages#about'
+  match '/services', :to => 'pages#services'
+  match '/portfolio',    :to => 'pages#portfolio'
+  match '/fees',   :to => 'pages#fees'
+  match '/contact', :to => 'pages#contact'
 
 
 
